@@ -28,7 +28,6 @@ const Landing = (props) => {
   const [isDisabled, setIsDisabled] = useState(false);
   const [currentlyPlayingSound, setCurrentlyPlayingSound] = useState(null);
   const [logedIn, setLogedIn] = useState(false)
-  const [showAd, setShowAd] = useState(false);
 
   const animations = useMemo(() => {
     return ['grow', 'shake', 'shake-updown', 'largegrow'];
@@ -246,7 +245,7 @@ const Landing = (props) => {
           </p>
           <div className="hidden  xl:block fixed bottom-2 w-full max-w-[768px] left-1/2 -translate-x-1/2   h-[100px] overflow-hidden">
   <div className="flex items-center justify-center">
-    {showAd && <Ads adSlot="8244667586" className=" w-full max-h-[100px] " />}
+   <Ads adSlot="8244667586" className=" w-full max-h-[100px] " />
   </div>
 </div>
           <div className=' hidden  xl:block fixed left-0 top-1/2 min-w-[120px] max-w-[160px] h-[600px] -translate-y-1/2  '>
